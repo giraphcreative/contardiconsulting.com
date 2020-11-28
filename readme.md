@@ -5,6 +5,9 @@ A simple custom WordPress theme for Contardi Consulting. To start working, clone
 ```shell
 cd wp-content/themes/
 git clone https://github.com/giraphcreative/contardiconsulting.com.git contardi
+cd contardi
+git submodule init
+git submodule update
 npm install
 ```
 
