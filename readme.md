@@ -1,10 +1,10 @@
-## wp-pure
+## contardiconsulting.com
 
-A simple WordPress theme development framework - with a few helpful built-in shortcodes, Sass, Minify, and everything you'll need to build a new theme.
+A simple custom WordPress theme for Contardi Consulting. To start working, clone the theme into a WP themes folder like so:
 
 ```shell
 cd wp-content/themes/
-composer create-project jpederson/wp-pure
+git clone https://github.com/giraphcreative/contardiconsulting.com.git contardi
 npm install
 ```
 
