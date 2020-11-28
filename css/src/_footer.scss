@@ -1,0 +1,70 @@
+
+
+footer {
+	@include clearfix;
+	@include padding;
+	background: $teal;
+	color: white;
+	line-height: 1.5em;
+
+	a {
+		color: white;
+	}
+
+	.column {
+		padding: 20px 0;
+
+		p {
+			padding: 0;
+		}
+
+		@include respond-to( 768px ) {
+			float: left;
+			width: 32%;
+			padding: 10px 0 10px 2%;
+			border-left: 1px solid white;
+			min-height: 150px;
+
+			&.first {
+				border-left: 0;
+				padding-left: 0;
+			}
+		}
+
+		.nav-menu li a {
+			text-transform: uppercase;
+
+			&:hover {
+				text-decoration: none;
+				border-bottom: 1px dotted rgba( white, .4 );
+			}
+		}
+
+		label {
+			text-transform: uppercase;
+		}
+
+		input[type=text] {
+			display: block;
+			width: 100%;
+			margin: 5px 0;
+		}
+
+		input[type=submit] {
+			background: $navy;
+		}
+	}
+
+	.copyright {
+		clear: both;
+		color: rgba( white, .6 );
+		font-size: .8em;
+		text-align: center;
+		padding-top: 20px;
+		
+		@include respond-to( $bp-l ) {
+			padding-top: 35px;
+		}
+	}
+}
+

@@ -1,0 +1,77 @@
+
+
+.icons {
+	margin: 20px 0 50px;
+	@include clearfix;
+
+	@include respond-to( $bp-l ) {
+		padding: 0 20px;
+	}
+
+	.icon {
+		position: relative;
+		padding: 20px;
+		margin-bottom: 140px;
+		text-align: center;
+		background-size: cover;
+
+		@include respond-to( 450px ) {
+			width: 50%;
+			display: inline-block;
+			vertical-align: middle;
+			padding: 40px;
+		}
+
+		@include respond-to( $bp-m ) {
+			width: 33.3333%;
+		}
+
+		@include respond-to( $bp-l ) {
+			margin: 0 1.5% 140px 1.5%;
+			width: 30%;
+		}
+
+		@include respond-to( $bp-xl ) {
+			margin: 0 2.5% 130px 2.5%;
+			width: 28%;
+		}
+
+		.text {
+			position: absolute;
+			bottom: -140px;
+			left: 0;
+			right: 0;
+			min-height: 140px;
+			padding: 10px;
+
+			&.navy { background-color: $navy; }
+			&.teal { background-color: $teal; }
+			&.lime { background-color: $lime; }
+
+			@include respond-to( $bp-xl ) {
+				bottom: -130px;
+				min-height: 130px;
+			}
+
+			h3 {
+				color: white;
+				font-size: 1em;
+				@include font-bold;
+				text-transform: uppercase;
+
+				@include respond-to( $bp-xl ) {
+					font-size: 1.2em;
+					line-height: 1.3em;
+				}
+			}
+
+			h4 {
+				color: white;
+				font-size: .6em;
+			}
+		}
+
+	}
+
+}
+

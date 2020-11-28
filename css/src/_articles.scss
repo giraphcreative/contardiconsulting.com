@@ -1,0 +1,45 @@
+
+
+.articles {
+
+	@include respond-to( $bp-l ) {
+		padding: 10px 0 0 0;
+	}
+
+	.article {
+		padding: 20px;
+		font-size: .85em;
+
+		a {
+			color: $navy;
+
+			&:hover {
+				color: lighten( $navy, 10% );
+			}
+		}
+
+		h3 {
+			font-size: 1.2em;
+			text-transform: uppercase;
+			padding: 20px 0 0 0;
+			text-align: center;
+		}
+
+		p {
+			font-size: .9em;
+		}
+
+		p.read-more {
+			font-size: .8em;
+			text-transform: uppercase;
+		}
+
+		@include respond-to( $bp-m ) {
+			float: left;
+			width: 30%;
+			margin: 0 1.5%;
+			padding: 30px;
+		}
+	}
+}
+
