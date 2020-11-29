@@ -76,8 +76,8 @@
 	max-width: 1220px;
 	margin: 0 auto;
 	background: white;
-	box-shadow: 0 0 50px $grey-light;
-	border: 1px solid $grey;
+	box-shadow: 0 0 50px rgba( $grey-light, .5 );
+	border: 1px solid rgba( $grey, .5 );
 	border-top: 0;
 	border-bottom: 0;
 	z-index: 100;
@@ -150,3 +150,39 @@
 	}
 }
 
+
+.page-title {
+	background: url(../img/bg-header.jpg) bottom center no-repeat;
+	background-size: cover;
+	padding: 50px 0;
+	text-align: center;
+	transition: 100ms all ease-in-out;
+
+	@include respond-to( $bp-m ) {
+		padding: 100px 0;
+	}
+
+	@include respond-to( $bp-l ) {
+		padding: 150px 0 190px;
+	}
+
+	@include respond-to( $bp-xl ) {
+		padding: 180px 0 240px;
+	}
+
+	h1 {
+		@include font-bold;
+		text-transform: uppercase;
+		color: white;
+		background: $navy;
+		padding: 10px 30px 5px;
+		display: inline-block;
+		margin: 0 auto;
+		width: auto;
+		font-size: 2em;
+
+		@include respond-to( 768px ) {
+			font-size: 2.6em;
+		}
+	}
+}
