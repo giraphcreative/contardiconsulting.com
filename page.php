@@ -2,13 +2,12 @@
 
 get_header();
 
+the_large_title();
+
 the_showcase();
 
 ?>
 
-<div class="page-title">
-	<h1><?php the_title(); ?></h1>
-</div>
 <div class="content-wide" role="main">
 	<?php 
 	

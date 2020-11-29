@@ -14,7 +14,7 @@ function require_multi( $files ) {
 
 
 // include utility functions
-require_multi( 'core', 'admin', 'metabox', 'images', 'paginate', 'metabox', 'showcase', 'icons', 'button', 'calculator' );
+require_multi( 'core', 'admin', 'metabox', 'images', 'paginate', 'title', 'showcase', 'icons', 'button', 'calculator' );
 
 
 // limit the excerpt length
