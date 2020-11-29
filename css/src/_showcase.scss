@@ -103,14 +103,14 @@
 
 		&.previous {
 			left: 0;
-			background: transparent url(../img/slider-arrow-left.png) right center no-repeat;
+			background: transparent url(../img/slider-arrow-left.webp) right center no-repeat;
 			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
 		}
 
 		&.next {
 			right: 0;
-			background: transparent url(../img/slider-arrow-right.png) left center no-repeat;
+			background: transparent url(../img/slider-arrow-right.webp) left center no-repeat;
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 		}
