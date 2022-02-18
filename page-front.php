@@ -26,15 +26,18 @@ get_header();
 		<a href="/process"><?php the_post_thumbnail( 'full' ); ?></a>
 	</div>
 
+	<!--
 	<div class="articles">
 	<?php
+	/*
 	$args = array(
 		'posts_per_page' => 3
 	);
-
+	
+	// query
 	$the_query = new WP_Query( $args );
 
-	// The Loop
+	// loop
 	if ( $the_query->have_posts() ) {
 	    while ( $the_query->have_posts() ) {
 	        $the_query->the_post(); ?>
@@ -47,12 +50,14 @@ get_header();
 	        <?php
 	    }
 	}
-
-	/* Restore original Post Data */
+	
+	// reset post data
 	wp_reset_postdata();
-
+	
+	*/
 	?>
 	</div>
+	-->
 
 <?php
 
