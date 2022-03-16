@@ -15,12 +15,12 @@ footer {
 		padding: 20px 0;
 
 		p {
-			padding: 0;
+			padding: 0 0 15px 0;
 		}
 
 		@include respond-to( 768px ) {
 			float: left;
-			width: 32%;
+			width: 50%;
 			padding: 10px 0 10px 2%;
 			border-left: 1px solid white;
 			min-height: 150px;
