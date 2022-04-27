@@ -15,9 +15,7 @@ the_showcase();
 			while ( have_posts() ) : the_post(); 
 				?>
 				<h1 class="post-title"><?php the_title(); ?></h1>
-				<?php the_content(); ?>
-				<p class="quiet">Posted by <?php print get_the_author_link() ?> in <?php print get_the_category_list( ', ' ) ?>.</p>
-				<?php
+				<?php the_content();
 			endwhile;
 		endif;
 		?>
