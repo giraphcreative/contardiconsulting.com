@@ -70,7 +70,7 @@ function showcase_metabox( $meta_boxes ) {
     $showcase_metabox = new_cmb2_box( array(
         'id' => 'showcase_metabox',
         'title' => 'Showcase',
-        'object_types' => array( 'page' ), // post type
+        'object_types' => array( 'page', 'post' ), // post type
         'context' => 'normal',
         'priority' => 'high',
     ) );
