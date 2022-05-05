@@ -40,7 +40,7 @@ function articles_shortcode( $atts ) {
 
 		if ( $a['style'] == 'projects' ) {
 
-			$return = '<div class="article-cards">';
+			$return = '<div class="article-cards projects">';
 		  
 		    // Start looping over the query results.
 		    while ( $query->have_posts() ) {

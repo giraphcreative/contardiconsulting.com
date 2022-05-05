@@ -28,7 +28,7 @@ get_header();
 
 	<div class="content-wide">
 		<h3><strong>CONTARDI CONSULTING PROJECTS</strong></h3>
-		<?php print do_shortcode( '[articles cats="projects" style="projects" orderby="title" order="ASC" posts_per_page=3 /]' ) ?>
+		<?php print do_shortcode( '[articles cats="projects" style="projects" orderby="title" order="ASC" posts_per_page=4 /]' ) ?>
 	</div>
 
 <?php
